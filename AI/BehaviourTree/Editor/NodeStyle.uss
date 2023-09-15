@@ -1,0 +1,147 @@
+#node-border {
+    background-color: rgb(50, 50, 63);
+    border-top-left-radius: 10px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#input {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#output {
+    align-items: center;
+}
+
+#selection-border {
+    border-left-color: rgb(0, 255, 227);
+    border-right-color: rgb(0, 255, 227);
+    border-top-color: rgb(0, 255, 227);
+    border-bottom-color: rgb(0, 255, 227);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+#title {
+    align-items: center;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-left-color: rgb(73, 73, 89);
+    border-right-color: rgb(73, 73, 89);
+    border-top-color: rgb(73, 73, 89);
+    border-bottom-color: rgb(73, 73, 89);
+    background-color: rgb(73, 73, 89);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -unity-font-style: bold;
+    font-size: 15px;
+    -unity-text-align: middle-center;
+    color: rgb(174, 208, 229);
+}
+
+:hover > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+:selected > #selection-border {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}
+
+:hover:selected > #selection-border {
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: rgb(0, 125, 111);
+    border-right-color: rgb(0, 125, 111);
+    border-top-color: rgb(0, 125, 111);
+    border-bottom-color: rgb(0, 125, 111);
+}
+
+.node {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 200px;
+}
+
+.entry #node-border {
+    border-left-color: rgb(113, 7, 7);
+    border-right-color: rgb(113, 7, 7);
+    border-top-color: rgb(113, 7, 7);
+    border-bottom-color: rgb(113, 7, 7);
+}
+
+.decorator #node-border {
+    border-left-color: rgb(39, 106, 12);
+    border-right-color: rgb(39, 106, 12);
+    border-top-color: rgb(39, 106, 12);
+    border-bottom-color: rgb(39, 106, 12);
+}
+
+.composite #node-border {
+    border-left-color: rgb(142, 108, 11);
+    border-right-color: rgb(142, 108, 11);
+    border-top-color: rgb(142, 108, 11);
+    border-bottom-color: rgb(142, 108, 11);
+}
+
+.action #node-border {
+    border-left-color: rgb(103, 3, 101);
+    border-right-color: rgb(103, 3, 101);
+    border-top-color: rgb(103, 3, 101);
+    border-bottom-color: rgb(103, 3, 101);
+}
+
+.running #node-border {
+    background-color: rgb(255, 235, 0);
+}
+
+.success #node-border {
+    background-color: rgb(88, 255, 0);
+}
+
+.failure #node-border {
+    background-color: rgb(214, 5, 13);
+}
